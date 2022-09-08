@@ -9,15 +9,26 @@ public class HiOne {
 	 */
 	public static void main(String[] args) {
 
-		Scanner in = new Scanner(System.in);
-		System.out.print("Enter value for arg 0: ");
-		String name = in.nextLine();
+		Scanner stdin = new Scanner( System.in );
+	    
+        String usersName;      // The user's name, as entered by the user.
+        String upperCaseName;  // The user's name, converted to upper case letters.
+        
+        System.out.print("Please enter your name: ");
+        usersName = stdin.nextLine();
+        
+        upperCaseName = usersName.toUpperCase();
+        
+        System.out.println("Hello, " + upperCaseName + ", How are you?  "
+        		+ "");
+    
+    }  // end main()
+ 
+}  // end class
 		//
 		// Below this line, enter code so that this program's output says
 		//      Hi, Pat.  How are you?
 		// if the value of name is "Pat"
 		//
 
-	}
 
-}
